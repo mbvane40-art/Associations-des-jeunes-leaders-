@@ -1,0 +1,26 @@
+{
+  "name": "ajl-platform",
+  "version": "1.0.0",
+  "description": "Association des Jeunes Leaders - Plateforme Web",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "start": "npm start --workspaces",
+    "test": "npm test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "keywords": ["association", "members", "subscriptions", "payments"],
+  "author": "AJL Team",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
